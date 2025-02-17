@@ -41,7 +41,6 @@ body {
 .container {
     max-width: 1200px;
     width: 100%;
-    padding: 20px;
     margin: auto;
 }
 
@@ -91,7 +90,11 @@ h1, h2, h3 {
     display: block; 
     text-indent: 10ch;
 }
+.sub-title{
+    text-align: center;
+    font-size: 20px;
 
+}
 
 @media (max-width: 768px) {
     .about-container {
@@ -109,23 +112,23 @@ h1, h2, h3 {
 
 .experience-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     max-width: 1200px;
+    width: 100%;
     margin: auto;
     padding: 20px;
     border-bottom: 1px solid #ddd;
 }
 
 .experience-left {
-    width: 30%;
+    width: 350px;
     text-align: left;
     flex-shrink: 0;
 }
 .experience-right {
-    width: 70%;
+    flex-grow: 1;
     text-align: left;
-    flex-shrink: 0;
 }
 .badge {
     display: inline-block;
@@ -163,7 +166,7 @@ li::before {
     
     
     <div class="about-me">
-        <h2>About Me</h2>
+        <p class="sub-title">About Me</p>
         <div class="about-container">
             <div class="about-image">
                 <img src="assets/hana.jpg" alt="Profile Image">
@@ -179,16 +182,16 @@ li::before {
                 </p>
                 <p>🚀 코드 리뷰를 철저히 진행하여 유지보수성과 가독성을 고려한 코드 작성</p>
                 <p>🚀 새로운 기술과 트렌드를 학습하며 끊임없이 성장</p>
-                <p>🚀 단순한 기능 구현이 아닌, **사용자와 개발자 모두에게 효율적인 코드**를 고민</p>
+                <p>🚀 단순한 기능 구현이 아닌, 사용자와 개발자 모두에게 효율적인 코드를 고민</p>
                 <p>
-                    제가 작성한 코드가 **유지보수하기 편리한지, 성능을 고려했는지, 불필요한 복잡성을 줄였는지**  
+                    제가 작성한 코드가 <strong>유지보수</strong>하기 편리한지, <strong>성능</strong>을 고려했는지, <strong>불필요한 복잡성</strong>을 줄였는지
                     항상 고민하며 더 나은 결과물을 만들겠습니다.
                 </p>
             </div>
         </div>
     </div>
 
-    <h2>💼 Experience</h2>
+    <p class="sub-title">💼 Experience</p>
 
     <!-- Mefit -->
     <div class="experience-container">
@@ -264,21 +267,9 @@ li::before {
     
             <p class="section-title">담당 구현 기능</p>
             <ul>
-                <li><strong>메인화면 관리</strong>: 
-                    - 공지사항, 서식 관리, 전자문서 현황 데이터를 메인화면에 실시간으로 표시
-                    - 데이터 조회 시 중복 호출 방지 및 페이지 로딩 속도 최적화
-                    - 각 메뉴별 현황 데이터를 카운트 방식으로 정리하여 한 화면에 요약 제공
-                </li>
-                <li><strong>메뉴관리</strong>: 
-                    - 계층형 트리 구조로 메인메뉴와 서브메뉴 조회 및 표시
-                    - 메뉴 등록 시 자동 렌더링 및 권한 체크 기능 개발
-                    - 메뉴 추가, 삭제, 순서 변경 기능 및 검색·페이지네이션 기능 구현
-                </li>
-                <li><strong>권한 및 역할 관리</strong>: 
-                    - 사용자 역할(Role)에 따른 권한 조회 및 메뉴 접근 제어 기능 개발
-                    - 로그인 후 리덕스 정보에 따른 권한 부여 및 동적 메뉴 로딩 기능 구현
-                    - 권한별 메뉴 관리 화면에서 체크박스를 통한 동적 변경 기능 개발
-                </li>
+                <li>메인화면 관리</li>
+                <li>메뉴관리</li>
+                <li>로그인 및 권한 관리</li>
             </ul>
     
             <p><span class="badge">성과 및 결과</span></p>
