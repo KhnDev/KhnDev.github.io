@@ -1,6 +1,6 @@
 title: "KhnDev의 경력 기술서"
 author: "KhnDev"
 description: "Java & Spring Boot 기반 개발자 경력 및 프로젝트 경험 정리"
-theme: minima
+theme: minima 
 paginate: 5    
 show_excerpts: true 
