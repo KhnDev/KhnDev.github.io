@@ -64,7 +64,7 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -90,15 +90,6 @@ h1, h2, h3 {
 .project-title {
     display: block; 
     text-indent: 10ch;
-}
-.badge {
-    display: inline-block;
-    background-color: #777; 
-    color: #fff; 
-    padding: 5px 10px;
-    border-radius: 5px; 
-    font-weight: bold;
-    font-size: 14px;
 }
 
 
@@ -128,22 +119,35 @@ h1, h2, h3 {
 
 .experience-left {
     width: 30%;
-    min-width: 280px; 
     font-weight: bold;
+    text-align: left;
 }
-
 .experience-right {
-    width: 65%;
+    width: 70%;
+    text-align: left;
+}
+.badge {
+    display: inline-block;
+    background-color: #777; 
+    color: #fff; 
+    padding: 5px 10px;
+    border-radius: 5px; 
+    font-weight: bold;
+    font-size: 14px;
 }
 
 ul {
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
-
+li {
+    margin-bottom: 5px;
+}
 li::before {
     content: "∙ ";
     color: rgb(88, 88, 88);
+    margin-right: 5px;
 }
 
     </style>
