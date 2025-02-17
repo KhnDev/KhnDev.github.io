@@ -6,7 +6,8 @@
     <title>경력 기술서</title>
     <style>
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -15,6 +16,25 @@ body {
     align-items: center;
     flex-direction: column;
 }
+.header {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    text-align: left;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 18px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
 
 .container {
     max-width: 900px;
@@ -129,8 +149,15 @@ li::before {
     </style>
 </head>
 <body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
 
     <h1>경력 기술서 (Career Portfolio)</h1>
+    <div class="header">
+        <h1>권하나</h1>
+        <p>풀스택 개발자</p>
+    </div>
+    
     <div class="about-me">
         <h2>About Me</h2>
         <div class="about-container">
